@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import{BrowserRouter, Routes, Route} from "react-router-dom"
+import Button from "react-bootstrap/Button"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<div>home</div>}/>
+            <Route path="/book" element={<div><Button variant={"warning"}>abc</Button></div>}/>
+
+          </Routes>
+      </BrowserRouter>
     </div>
   );
 }
