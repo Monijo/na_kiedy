@@ -27,5 +27,13 @@
         "17:00"
       ]
     }
+  ],
+  "reservations": [
+    {"id":  1,
+    "fullName": "Ryszard Klops",
+      "email": "klops@op.pl",
+      "phoneNumber": "658798107",
+      "visitDate": "2022-05-19T15:00"
+    }
   ]
 }
